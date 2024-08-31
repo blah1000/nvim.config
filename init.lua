@@ -27,3 +27,13 @@ require("lazy").setup({
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
+
+require("mason").setup({
+    ui = {
+        icons = {
+            package_installed = "✓",
+            package_pending = "➜",
+            package_uninstalled = "✗"
+        }
+    }
+})
